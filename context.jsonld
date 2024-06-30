@@ -9,6 +9,7 @@
     "nostr": "https://w3id.org/nostr#",
     "Event": "nostr:Event",
     "Relay": "nostr:Relay",
+    "Person": "nostr:Person",
     "pubkey": {
       "@id": "nostr:pubkey",
       "@type": "xsd:string"
@@ -32,6 +33,30 @@
     "sig": {
       "@id": "nostr:sig",
       "@type": "xsd:string"
+    },
+    "name": {
+      "@id": "nostr:name",
+      "@type": "xsd:string"
+    },
+    "about": {
+      "@id": "nostr:about",
+      "@type": "xsd:string"
+    },
+    "picture": {
+      "@id": "nostr:picture",
+      "@type": "xsd:anyURI"
+    },
+    "display_name": {
+      "@id": "nostr:display_name",
+      "@type": "xsd:string"
+    },
+    "website": {
+      "@id": "nostr:website",
+      "@type": "xsd:anyURI"
+    },
+    "banner": {
+      "@id": "nostr:banner",
+      "@type": "xsd:anyURI"
     },
     "Ontology": "owl:Ontology",
     "Class": "rdfs:Class",

@@ -77,6 +77,13 @@
             "term_status": "stable"
           },
           {
+            "@id": "nostr:Person",
+            "@type": "rdfs:Class",
+            "comment": "A Person in the nostr ecosystem.",
+            "label": "Person",
+            "term_status": "stable"
+          },
+          {
             "@id": "nostr:pubkey",
             "@type": ["rdfs:Property"],
             "comment": "Nostr pubkey 64 char lower case hex.",
@@ -169,6 +176,102 @@
             "label": "sig",
             "range": {
               "@id": "xsd:string"
+            },
+            "term_status": "stable"
+          },
+          {
+            "@id": "nostr:name",
+            "@type": ["rdfs:Property"],
+            "comment": "Username of the user, different from display_name.",
+            "domain": {
+              "@id": "nostr:Person"
+            },
+            "isDefinedBy": {
+              "@id": "nostr:"
+            },
+            "label": "name",
+            "range": {
+              "@id": "xsd:string"
+            },
+            "term_status": "stable"
+          },
+          {
+            "@id": "nostr:about",
+            "@type": ["rdfs:Property"],
+            "comment": "About the user.",
+            "domain": {
+              "@id": "nostr:Person"
+            },
+            "isDefinedBy": {
+              "@id": "nostr:"
+            },
+            "label": "about",
+            "range": {
+              "@id": "xsd:string"
+            },
+            "term_status": "stable"
+          },
+          {
+            "@id": "nostr:picture",
+            "@type": ["rdfs:Property"],
+            "comment": "URI picture of the user.",
+            "domain": {
+              "@id": "nostr:Person"
+            },
+            "isDefinedBy": {
+              "@id": "nostr:"
+            },
+            "label": "picture",
+            "range": {
+              "@id": "xsd:anyURI"
+            },
+            "term_status": "stable"
+          },
+          {
+            "@id": "nostr:display_name",
+            "@type": ["rdfs:Property"],
+            "comment": "Display name of the user, different from name.",
+            "domain": {
+              "@id": "nostr:Person"
+            },
+            "isDefinedBy": {
+              "@id": "nostr:"
+            },
+            "label": "display_name",
+            "range": {
+              "@id": "xsd:string"
+            },
+            "term_status": "stable"
+          },
+          {
+            "@id": "nostr:website",
+            "@type": ["rdfs:Property"],
+            "comment": "Website URI of the user.",
+            "domain": {
+              "@id": "nostr:Person"
+            },
+            "isDefinedBy": {
+              "@id": "nostr:"
+            },
+            "label": "website",
+            "range": {
+              "@id": "xsd:anyURI"
+            },
+            "term_status": "stable"
+          },
+          {
+            "@id": "nostr:banner",
+            "@type": ["rdfs:Property"],
+            "comment": "URI banner of the user.",
+            "domain": {
+              "@id": "nostr:Person"
+            },
+            "isDefinedBy": {
+              "@id": "nostr:"
+            },
+            "label": "banner",
+            "range": {
+              "@id": "xsd:anyURI"
             },
             "term_status": "stable"
           }
